@@ -20,21 +20,25 @@
 
 </div>
 
-    <header class="hero">
+    <header class="hero" id="inicio">
 
-   <nav>
+        
+
+  <nav class="navbar">
     
-    <button class="hamburguesa" id="hamburguesa">
-        ☰
-    </button>
+    <button class="hamburguesa" id="hamburguesa"
+        aria-label="Abrir menú" aria-expanded="false">
+  ☰
+</button>
 
-    <ul class="menu" id="menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
+   <ul class="menu" id="menu">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#formacion">Formación</a></li>
+    <li><a href="#habilidades">Habilidades</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+</ul>
 </nav>
 
     <div class="hero-content">
@@ -78,7 +82,8 @@
 
 </header>
 
-<section class="sobre mi" id="sobre mi">
+
+<section class="sobre" id="sobre-mi">
 
     <div class="titulo">
         <h2>Sobre mí</h2>
@@ -90,20 +95,60 @@
         <div class="texto-sobre">
 
             <p>
-                ¡Hola! Soy <strong>Andrius</strong>, apasionado por la tecnología y el desarrollo web.
-                Actualmente estoy aprendiendo HTML, CSS y JavaScript para crear sitios web modernos,
+                ¡Hola! Soy <strong>Andrius</strong>. Desarrollador web en formación apasionado por crear interfaces intuitivas y código limpio CSS y JavaScript para crear sitios web modernos,
                 interactivos y profesionales.
             </p>
 
-            <p>
-                También disfruto aprender nuevas tecnologías, jugar videojuegos y desarrollar
-                proyectos que me ayuden a mejorar mis habilidades como programador.
-            </p>
+           <p>Actualmente me especializo en:</p>
+<ul>
+  <li>Frontend: HTML5 semántico, CSS3 moderno y JavaScript ES6+.</li>
+  <li>Lógica: Python y estructuras de datos.</li>
+</ul>
+
+            <p> Mi objetivo es convertir ideas complejas en experiencias web fluidas.</p>
 
         </div>
 
     </div>
 
+</section>
+
+<section class="formacion" id="formacion">
+     <div class="titulo">
+        <h2>Formación académica</h2>
+        <div class="linea"></div>
+     </div>
+
+        <div class="formacion-container">
+
+            <div class="formacion-card">
+                <div class="formacion-icon">🎓</div>
+                <div>
+                    <h3>Ingeniería de Sistemas</h3>
+                    <p>Formación en programación, desarrollo de software y tecnologías de la información.</p>
+                </div>
+            </div>
+
+            <div class="formacion-card">
+                <div class="formacion-icon">🐍</div>
+                <div>
+                    <h3>Python</h3>
+                    <p>Estudios de programación en Python, incluyendo fundamentos, funciones, módulos y manejo de archivos.</p>
+                </div>
+            </div>
+
+            <div class="formacion-card">
+                <div class="formacion-icon">🌐</div>
+                <div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Formación en HTML, CSS y JavaScript para la creación de páginas web modernas e interactivas.</p>
+                </div>
+            </div>
+
+        </div>
+
+        
+    
 </section>
 
 <section class="habilidades" id="habilidades">
@@ -134,6 +179,8 @@
         </div>
 
     </div>
+
+    </section>
 
     <section class="proyectos" id="proyectos">
 
@@ -180,7 +227,7 @@
 
             <i class="fas fa-envelope"></i>
             <h3>Correo</h3>
-            <p>andriuspim1@gmail.com</p>
+            <a href="mailto:andriuspim1@gmail.com">andriuspim1@gmail.com</a>
 
         </div>
 

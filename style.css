@@ -10,7 +10,7 @@
     padding:0;
     box-sizing:border-box;
     font-family:"Poppins",sans-serif;
-    scroll-behavior:smooth;
+    
 }
 
 body{
@@ -98,10 +98,9 @@ body{
    Hero
 ========================== */
 
-.hero{
-    min-height:100vh;
-    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
-    padding:120px 8% 30px;
+.hero {
+    min-height: auto;
+    padding: 120px 8% 80px;
 }
 
 .navbar{
@@ -262,13 +261,14 @@ body{
     padding:100px 10%;
 }
 
-.titulo{
-    text-align:center;
-    margin-bottom:60px;
+.titulo {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
-.titulo h2{
-    font-size:42px;
+.titulo h2 {
+    font-size: 42px;
+    margin: 0;
 }
 
 .linea{
@@ -298,7 +298,7 @@ body{
 
 .texto-sobre:hover{
     transform:translateY(-8px);
-    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    box-shadow: 0 20px 50px rgba(56,189,248,.25);
 }
 
 /* ==========================
@@ -329,6 +329,68 @@ body{
     height:250px;
 }
 
+}
+
+/* =========================
+   FORMACIÓN ACADÉMICA
+========================= */
+
+#formacion {
+     padding: 100px 10%;
+}
+
+#formacion h2 {
+    text-align: center;
+    
+}
+
+.formacion-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto 0;
+}
+
+.formacion-card {
+    min-height: 380px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+
+    transition: 0.4s;
+
+}
+
+.formacion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(56, 189, 248, 0.22);
+}
+
+.formacion-icon {
+    font-size: 62px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.formacion-card h3 {
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.formacion-card p {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 /* ==========================
@@ -375,10 +437,7 @@ body{
     box-shadow: 0 20px 50px rgba(56,189,248,.25);
 }
 
-.card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(56,189,248,.25);
-}
+
 
 .card i{
     font-size:75px;
@@ -643,3 +702,10 @@ body{
     }
 
 }
+
+#sobre-mi {
+    padding: 100px 10%;
+    scroll-margin-top: 100px;
+}
+
+
